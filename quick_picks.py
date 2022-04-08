@@ -27,6 +27,7 @@ def main():
     number_of_quick_picks = int(input("How many quick picks?: "))
     for x in range (0,number_of_quick_picks):
         numbers = quick_picks()
+        numbers.sort()
         for x in range(0,len(numbers)):
             print(numbers[x], end=" ")
         print()
